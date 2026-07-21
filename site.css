@@ -194,7 +194,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--lime); outline-
 
 footer { gap: 18px; justify-content: center; padding: 46px clamp(24px, 5vw, 76px); border-top: 1px solid var(--line); color: #aeb4ae; text-align: center; font-size: 13px; }
 footer p { margin: 0; }
-footer a { margin-left: auto; color: var(--ink); font-weight: 700; }
 
 @media (max-width: 900px) {
   .hero { min-height: 780px; height: auto; grid-template-columns: 1fr; padding-top: 160px; }
@@ -219,7 +218,6 @@ footer a { margin-left: auto; color: var(--ink); font-weight: 700; }
   .project-body p { min-height: 0; }
   footer { flex-wrap: wrap; }
   footer p { width: calc(100% - 34px); text-align: left; }
-  footer a { width: 100%; margin: 10px 0 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
