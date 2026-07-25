@@ -39,6 +39,10 @@ test("server-renders the Ukrainian portfolio and all four website links", async 
   assert.match(html, /vladpadiak-lgtm\.github\.io\/Popularity\//);
   assert.match(html, /vladpadiak-lgtm\.github\.io\/auto-servis\//);
   assert.match(html, /vladpadiak-lgtm\.github\.io\/haus\//);
+  assert.doesNotMatch(
+    html,
+    /github\.com|Код на GitHub|Kód na GitHube|>GitHub(?:\s|<|↗)/i,
+  );
 });
 
 test("includes Slovak translations and removes the starter preview", async () => {
@@ -51,6 +55,10 @@ test("includes Slovak translations and removes the starter preview", async () =>
   assert.match(page, /Weby, ktoré/);
   assert.match(page, /Štyri nápady\. Štyri svety\./);
   assert.match(page, /changeLanguage\("sk"\)/);
+  assert.doesNotMatch(
+    page,
+    /github\.com|Код на GitHub|Kód na GitHube|>GitHub(?:\s|<|↗)/i,
+  );
   assert.match(layout, /lang="uk"/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
