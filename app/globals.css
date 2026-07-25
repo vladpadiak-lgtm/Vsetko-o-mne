@@ -450,18 +450,6 @@ footer {
   background: #315b2a;
 }
 
-.source-link {
-  border-bottom: 1px solid #9aa099;
-  color: #555b56;
-  font-size: 12px;
-  font-weight: 750;
-}
-
-.source-link:hover {
-  color: #111512;
-  border-color: #111512;
-}
-
 footer {
   gap: 18px;
   justify-content: center;
@@ -474,12 +462,6 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-footer a {
-  margin-left: auto;
-  color: var(--ink);
-  font-weight: 750;
 }
 
 @media (max-width: 900px) {
@@ -572,10 +554,6 @@ footer a {
     text-align: left;
   }
 
-  footer a {
-    width: 100%;
-    margin: 10px 0 0;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
