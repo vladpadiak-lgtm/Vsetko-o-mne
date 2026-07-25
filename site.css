@@ -189,9 +189,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--lime); outline-
   transition: 180ms ease;
 }
 .project-links a:first-child:hover { background: #315b2a; }
-.source-link { border-bottom: 1px solid #9aa099; color: #555b56; font-size: 12px; font-weight: 700; }
-.source-link:hover { color: #111512; border-color: #111512; }
-
 footer { gap: 18px; justify-content: center; padding: 46px clamp(24px, 5vw, 76px); border-top: 1px solid var(--line); color: #aeb4ae; text-align: center; font-size: 13px; }
 footer p { margin: 0; }
 
