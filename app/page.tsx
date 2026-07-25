@@ -19,7 +19,6 @@ const copy = {
     sectionTitle: "Чотири ідеї. Чотири світи.",
     live: "Живий сайт",
     open: "Відкрити сайт",
-    source: "Код на GitHub",
     footer: "Створено з увагою до змісту, деталей і людей.",
     projects: {
       bratislava: {
@@ -62,7 +61,6 @@ const copy = {
     sectionTitle: "Štyri nápady. Štyri svety.",
     live: "Web je online",
     open: "Otvoriť web",
-    source: "Kód na GitHube",
     footer: "Vytvorené s dôrazom na obsah, detaily a ľudí.",
     projects: {
       bratislava: {
@@ -99,28 +97,24 @@ const projects = [
     number: "01",
     mark: "BA",
     website: "https://vladpadiak-lgtm.github.io/bratislava/",
-    repository: "https://github.com/vladpadiak-lgtm/bratislava",
   },
   {
     key: "popularity",
     number: "02",
     mark: "F10",
     website: "https://vladpadiak-lgtm.github.io/Popularity/",
-    repository: "https://github.com/vladpadiak-lgtm/Popularity",
   },
   {
     key: "autoservice",
     number: "03",
     mark: "TL",
     website: "https://vladpadiak-lgtm.github.io/auto-servis/",
-    repository: "https://github.com/vladpadiak-lgtm/auto-servis",
   },
   {
     key: "haus",
     number: "04",
     mark: "HAUS",
     website: "https://vladpadiak-lgtm.github.io/haus/",
-    repository: "https://github.com/vladpadiak-lgtm/haus",
   },
 ] as const;
 
@@ -229,14 +223,6 @@ export default function Home() {
                     <a href={project.website} target="_blank" rel="noreferrer">
                       {text.open} <span aria-hidden="true">↗</span>
                     </a>
-                    <a
-                      className="source-link"
-                      href={project.repository}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {text.source}
-                    </a>
                   </div>
                 </div>
               </article>
@@ -248,9 +234,6 @@ export default function Home() {
       <footer>
         <span className="brand-dot" aria-hidden="true" />
         <p>{text.footer}</p>
-        <a href="https://github.com/vladpadiak-lgtm" target="_blank" rel="noreferrer">
-          GitHub ↗
-        </a>
       </footer>
     </main>
   );
