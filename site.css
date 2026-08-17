@@ -168,6 +168,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--lime); outline-
 .project-popularity .project-visual { background: #e8d7a0; color: #211a10; }
 .project-autoservice .project-visual { background: #232927; color: #ff6935; }
 .project-haus .project-visual { background: #224d3f; color: #efe6cc; }
+
+.project-moneymap .project-visual { background: #105e69; color: #d9fbf1; }
+.project-moneymap .project-visual::before { border-style: dashed; opacity: .42; }
+.project-moneymap .project-visual::after { background: #49d6ba; opacity: .18; }
+.project-pizza .project-visual { background: #c84422; color: #fff2d8; }
+.project-pizza .project-visual::before { width: 66%; border-width: 7px; opacity: .2; }
+.project-pizza .project-visual::after { width: 22%; background: #ffcf62; opacity: .35; }
+
 .project-body { padding: clamp(26px, 3.2vw, 48px); }
 .project-meta { justify-content: space-between; gap: 16px; color: #6f756f; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
 .live-status { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
